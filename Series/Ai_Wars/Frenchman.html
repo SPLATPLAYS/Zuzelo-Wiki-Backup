@@ -2,7 +2,7 @@
 title: Frenchman
 description: Introduced by the viewers
 published: true
-date: 2025-01-11T11:00:36.019Z
+date: 2025-06-14T12:13:24.622Z
 tags: ai_wars
 editor: code
 dateCreated: 2025-01-11T09:24:55.425Z
@@ -11,97 +11,131 @@ dateCreated: 2025-01-11T09:24:55.425Z
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frenchman</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px 10%;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        header p {
-            margin: 5px 0 0;
-            font-size: 1.2em;
-        }
-        .container {
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        .category {
-            margin-bottom: 30px;
-        }
-        .category h2 {
-            color: #333;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #4CAF50;
-            padding-bottom: 5px;
-        }
-        .hboxcontainer {
-            overflow: hidden; /* Ensures that floated elements are properly contained */
-        }
-        .text-content {
-            margin-right: 20px;
-        }
-        .right-image {
-            float: right; /* Position the image to the top-right */
-            margin: 0 0 10px 20px; /* Add spacing around the image */
-            width: 150px; /* Adjust width as needed */
-        }
-      	/* first paragraph; css deals with making space for the image */
-      	/* TODO: Figure out better scaling than % */
-      	.introduction-paragraph {
-        		  width: 80%;
-      	}
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Frenchman</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px 10%;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    header p {
+      margin: 5px 0 0;
+      font-size: 1.2em;
+    }
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .infobox {
+      float: right;
+      width: 300px;
+      margin-left: 20px;
+      margin-bottom: 20px;
+      border: 1px solid #aaa;
+      padding: 10px;
+      background-color: #f9f9f9;
+      font-size: 90%;
+    }
+    .infobox img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 10px;
+    }
+    .infobox table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .infobox td {
+      padding: 4px 8px;
+      vertical-align: top;
+    }
+    .category {
+      margin-bottom: 30px;
+    }
+    .category h2 {
+      color: #333;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #4CAF50;
+      padding-bottom: 5px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-      <div class="container">
-              <img src="/Series/Ai_Wars/frenchman.png" alt="frenchman" class="right-image" align="right" />
-        <div class="category" style="width:80%;">
-          <h2>Introduction</h2>
-          <div class="hboxcontainer">
-              <div class="text-content">
-                  <p><strong>Role:</strong> Versatile Opponent</p>
-                  <p><strong>Abilities:</strong> Can heal itself by reducing his melee attack and great area damage</p>
-                  <p><strong>Description:</strong> Equipped with a baguette and a croissant, the Frenchman is effective against big groups and can withstand certain hits with his baguette and deal decent melee damage with his baguette.</p>
-                  <p><strong>Weakness:</strong> Very weak if friendly fire is turned on, usually groups kill themselves if friendly fire is activated,</p>
-              </div>
-          </div>
-        </div>
-        <div class="category">
-          <h2>Variations</h2>
-          <p><strong>Og Frenchman</strong></p>
-          <p>- Can move freely</p>
-          <p>- Can rotate freely</p>
-          <p>- 100 health</p>
-          <p>- 2 movespeed</p>
-          <p>- 50 base damage</p>
-          <p>- Attack with their baguette for melee damage or their croissant for ranged area damage, can heal itself by sacrificing part of their melee damage</p>
-        </div>
-        <div class="category">
-          <h2>Trivia</h2>
-          <p>The Frenchman is the 7th unit added to AI Wars.</p>
-          <p>The Frenchman was proposed by <strong>Lasse</strong>, an active Discord member, and voted 19 times, almost twice the average of other propositions.</p>
-          <p>Instead of fighting a "red" team as usual, Frenchmen fought against "humanity" because French are obviously eldritch horror-level threats.</p>
-        </div>
-      </div>
-    </header>
+  <header>
+    <h1>Frenchman</h1>
+    <p>A Versatile Opponent in AI Wars</p>
+  </header>
+
+  <div class="container">
+    <!-- Infobox Start -->
+    <div class="infobox">
+      <img src="/Series/Ai_Wars/frenchman.png" alt="Frenchman">
+      <table>
+        <tr>
+          <td><strong>Role</strong></td>
+          <td>Versatile Opponent</td>
+        </tr>
+        <tr>
+          <td><strong>Abilities</strong></td>
+          <td>Can heal itself by reducing melee attack; strong area damage</td>
+        </tr>
+        <tr>
+          <td><strong>Description</strong></td>
+          <td>Equipped with a baguette and a croissant; effective against groups; can withstand hits and deal melee damage.</td>
+        </tr>
+        <tr>
+          <td><strong>Weakness</strong></td>
+          <td>Very weak with friendly fire on; tends to cause team self-destruction.</td>
+        </tr>
+      </table>
+    </div>
+    <!-- Infobox End -->
+
+    <div class="category">
+      <h2>Introduction</h2>
+      <p>The Frenchman is a humorous but effective unit introduced in AI Wars. Designed as a nod to classic French stereotypes, this unit blends comedic flavor with real tactical advantage.</p>
+    </div>
+
+    <div class="category">
+      <h2>Variations</h2>
+      <p><strong>Og Frenchman</strong></p>
+      <ul>
+        <li>Can move freely</li>
+        <li>Can rotate freely</li>
+        <li>100 health</li>
+        <li>2 move speed</li>
+        <li>50 base damage</li>
+        <li>Attacks with a baguette (melee) or croissant (ranged AoE)</li>
+        <li>Can heal by sacrificing melee power</li>
+      </ul>
+    </div>
+
+    <div class="category">
+      <h2>Trivia</h2>
+      <p>The Frenchman is the 7th unit added to AI Wars.</p>
+      <p>Proposed by <strong>Lasse</strong>, an active Discord member, and received 19 votes—nearly double the average.</p>
+      <p>Unlike other units, the Frenchman battles “humanity” instead of the red team, emphasizing their mythic, chaotic nature.</p>
+    </div>
+  </div>
 </body>
 </html>
