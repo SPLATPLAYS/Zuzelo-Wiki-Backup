@@ -2,7 +2,7 @@
 title: Frenchman
 description: Introduced by the viewers
 published: true
-date: 2025-06-14T12:17:57.006Z
+date: 2025-06-14T12:20:24.319Z
 tags: 
 editor: code
 dateCreated: 2025-01-11T09:24:55.425Z
@@ -21,20 +21,25 @@ dateCreated: 2025-01-11T09:24:55.425Z
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
+            line-height: 1.6;
         }
+
         header {
             background-color: #333;
             color: white;
             padding: 20px 10%;
             text-align: center;
         }
+
         header h1 {
             margin: 0;
         }
+
         header p {
             margin: 5px 0 0;
             font-size: 1.2em;
         }
+
         .container {
             max-width: 900px;
             margin: 20px auto;
@@ -42,66 +47,268 @@ dateCreated: 2025-01-11T09:24:55.425Z
             background: white;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
         }
+
+        .main-content {
+            flex: 1;
+        }
+
         .category {
             margin-bottom: 30px;
         }
+
         .category h2 {
             color: #333;
             margin-bottom: 10px;
             border-bottom: 2px solid #4CAF50;
             padding-bottom: 5px;
         }
-        .hboxcontainer {
-            overflow: hidden; /* Ensures that floated elements are properly contained */
+
+        /* Wikipedia-style Infobox */
+        .infobox {
+            width: 300px;
+            min-width: 300px;
+            border: 1px solid #a2a9b1;
+            border-spacing: 3px;
+            background-color: #f8f9fa;
+            color: #222;
+            font-size: 14px;
+            line-height: 1.5;
+            border-radius: 3px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        .text-content {
-            margin-right: 20px;
+
+        .infobox-title {
+            background: #eaecf0;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            padding: 12px;
+            margin: 0;
+            border-bottom: 1px solid #a2a9b1;
         }
-        .right-image {
-            float: right; /* Position the image to the top-right */
-            margin: 0 0 10px 20px; /* Add spacing around the image */
-            width: 150px; /* Adjust width as needed */
+
+        .infobox-image {
+            text-align: center;
+            padding: 12px;
+            background: white;
         }
-      	/* first paragraph; css deals with making space for the image */
-      	/* TODO: Figure out better scaling than % */
-      	.introduction-paragraph {
-        		  width: 80%;
-      	}
+
+        .infobox-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .infobox-caption {
+            font-size: 12px;
+            color: #54595d;
+            margin-top: 8px;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .infobox-row {
+            display: flex;
+            border-bottom: 1px solid #eaecf0;
+        }
+
+        .infobox-row:last-child {
+            border-bottom: none;
+        }
+
+        .infobox-label {
+            background: #eaecf0;
+            font-weight: bold;
+            padding: 8px 12px;
+            width: 35%;
+            vertical-align: top;
+            border-right: 1px solid #a2a9b1;
+        }
+
+        .infobox-data {
+            padding: 8px 12px;
+            flex: 1;
+            background: white;
+        }
+
+        .infobox-subheader {
+            background: #dcdcdc;
+            font-weight: bold;
+            text-align: center;
+            padding: 8px 12px;
+            border-bottom: 1px solid #a2a9b1;
+            color: #333;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .infobox {
+                width: 100%;
+                min-width: auto;
+                order: -1; /* Move infobox to top on mobile */
+            }
+        }
+
+        /* Main article styles */
+        h1 {
+            color: #222;
+            border-bottom: 3px solid #a2a9b1;
+            padding-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 16px;
+        }
+
+        a {
+            color: #0645ad;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <header>
-      <div class="container">
-              <img src="/Series/Ai_Wars/frenchman.png" alt="frenchman" class="right-image" align="right" />
-        <div class="category" style="width:80%;">
-          <h2>Introduction</h2>
-          <div class="hboxcontainer">
-              <div class="text-content">
-                  <p><strong>Role:</strong> Versatile Opponent</p>
-                  <p><strong>Abilities:</strong> Can heal itself by reducing his melee attack and great area damage</p>
-                  <p><strong>Description:</strong> Equipped with a baguette and a croissant, the Frenchman is effective against big groups and can withstand certain hits with his baguette and deal decent melee damage with his baguette.</p>
-                  <p><strong>Weakness:</strong> Very weak if friendly fire is turned on, usually groups kill themselves if friendly fire is activated,</p>
-              </div>
-          </div>
-        </div>
-        <div class="category">
-          <h2>Variations</h2>
-          <p><strong>Og Frenchman</strong></p>
-          <p>- Can move freely</p>
-          <p>- Can rotate freely</p>
-          <p>- 100 health</p>
-          <p>- 2 movespeed</p>
-          <p>- 50 base damage</p>
-          <p>- Attack with their baguette for melee damage or their croissant for ranged area damage, can heal itself by sacrificing part of their melee damage</p>
-        </div>
-        <div class="category">
-          <h2>Trivia</h2>
-          <p>The Frenchman is the 7th unit added to AI Wars.</p>
-          <p>The Frenchman was proposed by <strong>Lasse</strong>, an active Discord member, and voted 19 times, almost twice the average of other propositions.</p>
-          <p>Instead of fighting a "red" team as usual, Frenchmen fought against "humanity" because French are obviously eldritch horror-level threats.</p>
-        </div>
-      </div>
+        <h1>Frenchman</h1>
+        <p>AI Wars Unit Database</p>
     </header>
+    
+    <div class="container">
+        <div class="main-content">
+            <div class="category">
+                <h2>Introduction</h2>
+                <p><strong>Abilities:</strong> Can heal itself by reducing his melee attack and great area damage</p>
+                <p><strong>Description:</strong> Equipped with a baguette and a croissant, the Frenchman is effective against big groups and can withstand certain hits with his baguette and deal decent melee damage with his baguette.</p>
+                <p><strong>Weakness:</strong> Very weak if friendly fire is turned on, usually groups kill themselves if friendly fire is activated.</p>
+            </div>
+
+            <div class="category">
+                <h2>Variations</h2>
+                <p><strong>OG Frenchman</strong></p>
+                <p>- Can move freely</p>
+                <p>- Can rotate freely</p>
+                <p>- 100 health</p>
+                <p>- 2 movespeed</p>
+                <p>- 50 base damage</p>
+                <p>- Attack with their baguette for melee damage or their croissant for ranged area damage, can heal itself by sacrificing part of their melee damage</p>
+            </div>
+
+            <div class="category">
+                <h2>Trivia</h2>
+                <p>The Frenchman is the 7th unit added to AI Wars.</p>
+                <p>The Frenchman was proposed by <strong>Lasse</strong>, an active Discord member, and voted 19 times, almost twice the average of other propositions.</p>
+                <p>Instead of fighting a "red" team as usual, Frenchmen fought against "humanity" because French are obviously eldritch horror-level threats.</p>
+            </div>
+        </div>
+        
+        <!-- Wikipedia-style Infobox -->
+        <div class="infobox">
+            <div class="infobox-title">Frenchman</div>
+            
+            <div class="infobox-image">
+                <img src="/Series/Ai_Wars/frenchman.png" alt="Frenchman unit">
+                <div class="infobox-caption">AI Wars Frenchman Unit</div>
+            </div>
+            
+            <div class="infobox-subheader">Unit Information</div>
+            
+            <div class="infobox-row">
+                <div class="infobox-label">Role</div>
+                <div class="infobox-data">Versatile Opponent</div>
+            </div>
+            
+            <div class="infobox-row">
+                <div class="infobox-label">Unit Type</div>
+                <div class="infobox-data">Melee/Ranged Hybrid</div>
+            </div>
+            
+            <div class="infobox-row">
+                <div class="infobox-label">Weakness</div>
+                <div class="infobox-data">Friendly Fire</div>
+            </div>
+            
+            <div class="infobox-subheader">OG Frenchman Stats</div>
+            
+            <div class="infobox-row">
+                <div class="infobox-label">Health</div>
+                <div class="infobox-data">100</div>
+            </div>
+            
+            <div class="infobox-row">
+                <div class="infobox-label">Move Speed</div>
+                <div class="infobox-data">2</div>
+            </div>
+            
+            <div class="infobox-row">
+                <div class="infobox-label">Base Damage</div>
+                <div class="infobox-data">50</div>
+            </div>
+            
+            <div class="infobox-row">
+                <div class="infobox-label">Weapons</div>
+                <div class="infobox-data">Baguette (Melee)<br>Croissant (Ranged)</div>
+            </div>
+            
+            <div class="infobox-row">
+                <div class="infobox-label">Special</div>
+                <div class="infobox-data">Self-healing ability</div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>Introduction</h2>
+            <p><strong>Abilities:</strong> Can heal itself by reducing his melee attack and great area damage</p>
+            <p><strong>Description:</strong> Equipped with a baguette and a croissant, the Frenchman is effective against big groups and can withstand certain hits with his baguette and deal decent melee damage with his baguette.</p>
+            <p><strong>Weakness:</strong> Very weak if friendly fire is turned on, usually groups kill themselves if friendly fire is activated.</p>
+        </div>
+
+        <div class="category">
+            <h2>Variations</h2>
+            <p><strong>OG Frenchman</strong></p>
+            <p>- Can move freely</p>
+            <p>- Can rotate freely</p>
+            <p>- 100 health</p>
+            <p>- 2 movespeed</p>
+            <p>- 50 base damage</p>
+            <p>- Attack with their baguette for melee damage or their croissant for ranged area damage, can heal itself by sacrificing part of their melee damage</p>
+        </div>
+
+        <div class="category">
+            <h2>Trivia</h2>
+            <p>The Frenchman is the 7th unit added to AI Wars.</p>
+            <p>The Frenchman was proposed by <strong>Lasse</strong>, an active Discord member, and voted 19 times, almost twice the average of other propositions.</p>
+            <p>Instead of fighting a "red" team as usual, Frenchmen fought against "humanity" because French are obviously eldritch horror-level threats.</p>
+        </div>
+    </div>
+
+    <script>
+        // Add some interactivity
+        document.addEventListener('DOMContentLoaded', function() {
+            const infobox = document.querySelector('.infobox');
+            
+            // Add subtle hover effect
+            infobox.addEventListener('mouseenter', function() {
+                this.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
+                this.style.transform = 'translateY(-2px)';
+                this.style.transition = 'all 0.3s ease';
+            });
+            
+            infobox.addEventListener('mouseleave', function() {
+                this.style.boxShadow = '0 2px 4px rgba(0,0,0,0.1)';
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
 </body>
 </html>
